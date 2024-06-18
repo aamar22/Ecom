@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Sidenav from "../Components/Sidenav";
-
 import "../Style/style.css"
-const Home = () => {
+
+const Transaction = () => {
 	return (
 		<div className="test">
       <Sidenav/>
-          <h1>Home</h1>
+          <h1>Transaction</h1>
 		</div>
 	);
 };
 
-export default Home;
+export default Transaction;

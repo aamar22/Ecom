@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import React, { useState } from "react";
 
 const Login = () => {
@@ -43,11 +44,11 @@ const handlePassVisibilty = () => {
     color: "black",
     textAlign: "center",
 	margin:"50px",
-  }}  >Login Form</h1>
+  }}  >Login</h1>
     
 <form>
 <Grid container direction="column" spacing={2}>
-	<Grid item>
+	<Grid item>  
 		<TextField
 			type="email"
 			fullWidth

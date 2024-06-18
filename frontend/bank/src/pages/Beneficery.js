@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import Sidenav from "../Components/Sidenav";
-
+import Box from '@mui/material/Box';
 import "../Style/style.css"
-const Home = () => {
+const Beneficiary = () => {
+
+
+
 	return (
 		<div className="test">
-      <Sidenav/>
-          <h1>Home</h1>
+	
+		  <Sidenav/>
+          <h1>Beneficiary</h1>
+		
 		</div>
 	);
 };
 
-export default Home;
+export default Beneficiary;

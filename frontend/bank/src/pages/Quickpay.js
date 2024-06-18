@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Sidenav from "../Components/Sidenav";
-
 import "../Style/style.css"
-const Home = () => {
+
+const Quickpay = () => {
 	return (
-		<div className="test">
+        <div className="test">
       <Sidenav/>
-          <h1>Home</h1>
+          <h1>Quickpay</h1>
 		</div>
 	);
 };
 
-export default Home;
+export default Quickpay;
