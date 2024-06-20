@@ -1,8 +1,41 @@
-.test {
+.testone {
+    justify-content: normal;
+    ;
+    /* margin-top: 120px; */
+    margin-left: 320px;
 
-
-display: flex;
-justify-content: normal;;
-margin-top: 120px;
 }
-  
+
+.testtwo {
+
+    justify-content: normal;
+    ;
+    margin-top: -224px;
+    margin-left: 560px;
+}
+
+;
+
+.testpay {
+    margin-top: 24px;
+}
+
+;
+
+.test {
+    display: flex;
+    justify-content: normal;
+    ;
+    /* margin-top: 120px; */
+    margin-left: 320px;
+    flex-direction: column;
+}
+
+;
+
+.inputbox {
+    display: flex;
+    justify-content: normal;
+    ;
+    margin-top: 120px;
+}
