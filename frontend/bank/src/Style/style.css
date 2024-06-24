@@ -1,3 +1,10 @@
+.test {
+    display: flex;
+    justify-content: normal;
+    /* margin-top: 120px; */
+    margin-left: 320px;
+    flex-direction: column;
+}
 .testone {
     justify-content: normal;
     ;
@@ -25,7 +32,6 @@
 .test {
     display: flex;
     justify-content: normal;
-    ;
     /* margin-top: 120px; */
     margin-left: 320px;
     flex-direction: column;
