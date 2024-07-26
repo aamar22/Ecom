@@ -65,9 +65,9 @@ const Beneficiary = () => {
   };
 
   return (
-    <div className="test">
+    <div className="testbox">
       <Sidenav/>
-      <div>
+      <div className="box1">
         <h1>Beneficiary</h1>
         <h3>Account Number</h3>
         <TextField 
@@ -96,6 +96,7 @@ const Beneficiary = () => {
         <p>payee will add in 30 mins</p>
         <Button variant="contained" onClick={handleAddBeneficiary}>ADD</Button>
       </div>
+      <div className="element2">
       <h1>Beneficiary List</h1>
       <div style={{ height: 400, width: '100%' }}>
         <DataGrid
@@ -104,6 +105,7 @@ const Beneficiary = () => {
           pageSize={5}
           checkboxSelection
         />
+      </div>
       </div>
       <ToastContainer 
         position="top-right"

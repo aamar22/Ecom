@@ -45,3 +45,12 @@
     ;
     margin-top: 120px;
 }
+
+.testbox{
+    display: flex;
+    
+}
+.element2{
+    margin-top: 62px;
+    margin-left: 30px;
+}

@@ -89,7 +89,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 export default function Sidenav() {
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const navigate = useNavigate()
 
   const handleDrawerOpen = () => {
@@ -97,7 +97,7 @@ export default function Sidenav() {
   };
 
   const handleDrawerClose = () => {
-    setOpen(false);
+    setOpen(true);
   };
 
   return (
@@ -116,6 +116,7 @@ export default function Sidenav() {
             }}
           >
             <MenuIcon />
+            <h2>hhh</h2>
           </IconButton>
           <Typography variant="h6" noWrap component="div">
             My Account

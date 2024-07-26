@@ -1,42 +1,39 @@
 
-import mongoose from "mongoose";
-import { Mongoose } from "mongoose";
+const mongoose = require('mongoose');
 
 
 const TransactionSchema = new mongoose.Schema({
-    SenderName: {
+    accountNumber: {
         type: String,
-        required: [true, "First Name Is Required!"],
-        minLength: [3, "First Name Must Contain At Least 3 Characters!"],
+       
     },
-    SenderAccountnumber: {
+    ifsc: {
         type: String,
-        required: [true, "First Name Is Required!"],
-        minLength: [3, "First Name Must Contain At Least 3 Characters!"],
+       
     },
-    ReceiverName: {
+    beneficiaryName: {
         type: String,
-        required: [true, "Last Name Is Required!"],
-        minLength: [3, "Last Name Must Contain At Least 3 Characters!"],
+      
     },
-    ReceiverAccountnumber: {
+    amount: {
         type: String,
-        required: [true, "Last Name Is Required!"],
-        minLength: [3, "Last Name Must Contain At Least 3 Characters!"],
+      
     },
     Amount: {
         type: String,
 
     },
-    Paymenttype: {
-        type: String,
-
-    },
+ 
     status: {
         type: String,
-        enum: ["Success", "Failed"],
-        default: "Success",
+        enum: ["Pending","Success", "Failed"],
+        default: "Pending",
     },
-});
+},
+{ timestamps: true }
+);
 
-export const Transaction = mongoose.model("Transaction", TransactionSchema);
+const Transaction = mongoose.model("Transaction", TransactionSchema);
+
+
+module.exports = Transaction;
