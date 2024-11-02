@@ -21,8 +21,8 @@ const Beneficiary = () => {
   const [beneficiaries, setBeneficiaries] = useState([]);
 
   useEffect(() => {
-    // Fetch beneficiaries from API
-    axios.get('https://ominous-guacamole-64697grv4jq25xx5-5000.app.github.dev/api/v1/beneficery/getAll')
+    // Fetch beneficiaries from APIhttps://sinister-spirit-qpr7gq9vg4j2xp4v-5000.app.github.dev/
+    axios.get('http://localhost:5000/api/v1/beneficery/getAll')
       .then(response => {
         // Assuming each beneficiary object has `_id` as the unique identifier
         const formattedBeneficiaries = response.data.map((beneficiary, index) => ({
@@ -46,7 +46,7 @@ const Beneficiary = () => {
     };
 
     // Add beneficiary
-    axios.post('https://ominous-guacamole-64697grv4jq25xx5-5000.app.github.dev/api/v1/beneficery/add', newBeneficiary)
+    axios.post('http://localhost:5000/api/v1/beneficery/add', newBeneficiary)
       .then(response => {
         const addedBeneficiary = {
           ...response.data,

@@ -21,7 +21,7 @@ const Quickpay = () => {
       amount,
     };
     
-    axios.post('https://ominous-guacamole-64697grv4jq25xx5-5000.app.github.dev/api/v1/transaction/add', paymentData)
+    axios.post('http://localhost:5000/api/v1/transaction/add', paymentData)
       .then(response => {
         // Handle success
         toast.success('Payment successful!');

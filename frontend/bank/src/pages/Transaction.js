@@ -26,7 +26,7 @@ const Transaction = () => {
   useEffect(() => {
     // Fetch transactions from API
 	// https://ominous-guacamole-64697grv4jq25xx5-5000.app.github.dev/api/v1/transaction/add
-    axios.get('https://ominous-guacamole-64697grv4jq25xx5-5000.app.github.dev/api/v1/transaction/getAll')
+    axios.get('http://localhost:5000/api/v1/transaction/getAll')
       .then(response => {
         // Assuming each transaction object has `_id` as the unique identifier
         const formattedTransactions = response.data.map((transaction, index) => ({
@@ -52,7 +52,7 @@ const Transaction = () => {
       date: new Date().toISOString()
     };
 
-    axios.post('https://ominous-guacamole-64697grv4jq25xx5-5000.app.github.dev/api/v1/transactions/add', newTransaction)
+    axios.post('http://localhost:5000/api/v1/transactions/add', newTransaction)
       .then(response => {
         setTransactions([...transactions, { ...response.data, id: transactions.length + 1 }]);
         setAccountNumber('');
